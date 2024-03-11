@@ -34,6 +34,7 @@ h1 {
   font-weight: bold;
   color: rgb(200, 175, 255);
   padding: 16px;
+  margin: 0 0 32px 0;
 }
 
 .tabs p {
@@ -59,7 +60,7 @@ h1 {
 }
 
 .tabs .active::before {
-  content: "";
+  content: '';
   width: 200%;
   height: 4px;
   background-color: purple;
@@ -68,4 +69,40 @@ h1 {
   left: -50%;
   z-index: 2;
   border-radius: 10px;
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-wrapper img {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toggle {
+  background-color: rgb(83, 49, 156);
+  height: 32px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 4px 0 16px;
+  align-items: center;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.toggle span:first-of-type{
+  color: white;
+}
+
+.toggle span:last-of-type{
+  background-color: white;
+  color: rgb(83, 49, 156);
+  padding: 4px 16px;
+  border-radius: 20px;;
 }
